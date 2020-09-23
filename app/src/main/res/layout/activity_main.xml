@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionFive"
+        android:layout_width="228dp"
+        android:layout_height="19dp"
+        android:text="@string/string_questionFive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/questionFour"
+        android:layout_width="226dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/string_questionFourr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionThree"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <TextView
+        android:id="@+id/questionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/string_questionThree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTwo"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/questionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/string_questionFour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionOne"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/questionOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_questionOne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="launchSecondActivity"
+        android:text="@string/button_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/string_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupFive"
+        android:layout_width="106dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608">
+
+        <RadioButton
+            android:id="@+id/yesFive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="questionFiveclick"
+            android:text="@string/yesFive" />
+
+        <RadioButton
+            android:id="@+id/noFive"
+            android:onClick="questionFiveclick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/noFive" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupFour"
+        android:layout_width="105dp"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511">
+
+        <RadioButton
+            android:id="@+id/yesFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionFourclick"
+            android:text="@string/yesFour" />
+
+        <RadioButton
+            android:id="@+id/noFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionFourclick"
+            android:text="@string/noFour" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupThree"
+        android:layout_width="105dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416">
+
+        <RadioButton
+            android:id="@+id/yesThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionThreeclick"
+            android:text="@string/yesThree" />
+
+        <RadioButton
+            android:id="@+id/noThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionThreeclick"
+            android:text="@string/noThree" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupTwo"
+        android:layout_width="106dp"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307">
+
+        <RadioButton
+            android:id="@+id/yesTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionTwoclick"
+            android:text="@string/yesTwo" />
+
+        <RadioButton
+            android:id="@+id/noTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionTwoclick"
+            android:text="@string/noTwo" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupOne"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199">
+
+        <RadioButton
+            android:id="@+id/yesOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionOneclick"
+            android:text="@string/yesOne" />
+
+        <RadioButton
+            android:id="@+id/noOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="questionOneclick"
+            android:text="@string/string_noOne" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:text="Please Anwser All Questions"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/errorText2"
+        android:layout_width="254dp"
+        android:layout_height="66dp"
+        android:text="Please Enter Your Name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

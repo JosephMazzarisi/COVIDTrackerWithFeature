@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">COVID Tracker</string>
+    <string name="string_questionFive">Do you feel any shortness of breath?</string>
+    <string name="string_questionTwo">Have you been coughing alot throughout the day?</string>
+    <string name="string_questionThree">Do you have a runny nose?</string>
+    <string name="string_questionFour">Do you feel shivers or are sweating?</string>
+    <string name="string_noOne">No</string>
+    <string name="string_title">Covid Tracker</string>
+    <string name="string_questionOne">Is your temperature 100.4 or above?</string>
+    <string name="button_submit">Submit</string>
+    <string name="string_name">Name</string>
+    <string name="yesFive">Yes</string>
+    <string name="noFive">No</string>
+    <string name="yesFour">Yes</string>
+    <string name="noFour">No</string>
+    <string name="yesThree">Yes</string>
+    <string name="noThree">No</string>
+    <string name="yesTwo">Yes</string>
+    <string name="noTwo">No</string>
+    <string name="yesOne">Yes</string>
+    <string name="string_questionFourr">Have you been coughing today?</string>
+</resources>
