@@ -17,6 +17,7 @@ public class SecondActivity extends AppCompatActivity {
     private boolean yesThree;
     private boolean yesFour;
     private boolean yesFive;
+    private String nameOfPerson;
 
 
     @Override
@@ -30,19 +31,24 @@ public class SecondActivity extends AppCompatActivity {
         yesThree = b.getBoolean("yesThreeS");
         yesFour = b.getBoolean("yesFourS");
         yesFive = b.getBoolean("yesFiveS");
+        Date currentTime;
+        String nameOfPerson = intent.getExtras().getString("nameOfPerson");
         Date currentTime = Calendar.getInstance().getTime();
         String formattedDate = DateFormat.getDateInstance().format(currentTime);
         TextView textDate = findViewById(R.id.textDate);
         textDate.setText(formattedDate);
+        TextView nameOfperson = findViewById(R.id.nameOfPerson);
+        nameOfperson.setText(nameOfPerson);
 
 
        if ((yesOne && yesTwo && yesThree && yesFour && yesFive) == true){
            TextView textResults = findViewById(R.id.textResults);
-                   textResults.setText("You're good to go.");
+           textResults.setText("Be gone, for thoust is unholy");
        }
        else {
            TextView textResults = findViewById(R.id.textResults);
-           textResults.setText("Be gone, for thoust is unholy");
+           textResults.setText("You're good to go.");
+
        }
         int x = (int)(Math.random()*5);
         TextView textFacts = findViewById(R.id.textFacts);
@@ -56,7 +62,6 @@ public class SecondActivity extends AppCompatActivity {
                 textFacts.setText("Fact: Oranges weren't originally orange");
                 if(x==0)
                     textFacts.setText("Fact: Armadillo shells are bulletproof");
-
 
 
     }

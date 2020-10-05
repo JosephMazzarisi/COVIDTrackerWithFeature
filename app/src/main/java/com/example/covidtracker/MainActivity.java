@@ -97,11 +97,8 @@ public class MainActivity extends AppCompatActivity implements android.view.View
             intent.putExtra(yesFourS, yesFour);
             intent.putExtra(yesFiveS, yesFive);
             String a = findViewById(nameText).toString();
-            if(a.equals("Name") || a.equals("")){
-                TextView errorText2 = findViewById(R.id.errorText2);
-                errorText2.setVisibility(View.VISIBLE);
-                startActivity(intent);}
-        }
+            intent.putExtra("nameOfPerson", a);
+            startActivity(intent);}
          else {
           TextView errorText = findViewById(R.id.errorText);
           errorText.setVisibility(View.VISIBLE);
@@ -201,5 +198,6 @@ public class MainActivity extends AppCompatActivity implements android.view.View
 
         }
     }
+
 
 
