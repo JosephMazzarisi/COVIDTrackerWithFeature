@@ -33,12 +33,12 @@ public class SecondActivity extends AppCompatActivity {
         yesFive = b.getBoolean("yesFiveS");
         Date currentTime;
         String nameOfPerson = intent.getExtras().getString("nameOfPerson");
-        Date currentTime = Calendar.getInstance().getTime();
+        currentTime = Calendar.getInstance().getTime();
         String formattedDate = DateFormat.getDateInstance().format(currentTime);
         TextView textDate = findViewById(R.id.textDate);
         textDate.setText(formattedDate);
         TextView nameOfperson = findViewById(R.id.nameOfPerson);
-        nameOfperson.setText(nameOfPerson);
+        nameOfperson.setText(nameOfPerson.toString());
 
 
        if ((yesOne && yesTwo && yesThree && yesFour && yesFive) == true){

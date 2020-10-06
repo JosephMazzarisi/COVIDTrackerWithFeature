@@ -19,4 +19,17 @@
     <string name="noTwo">No</string>
     <string name="yesOne">Yes</string>
     <string name="string_questionFourr">Have you been coughing today?</string>
+    <string name="bonusYesFour">Yes</string>
+    <string name="bonusNoFour">No</string>
+    <string name="bonusYesThree">Yes</string>
+    <string name="bonusNoThree">No</string>
+    <string name="bonusYesTwo">Yes</string>
+    <string name="bonusNoTwo">No</string>
+    <string name="bonusQOne">Are you excited for school?</string>
+    <string name="bonusQFour">Do you like your teachers?</string>
+    <string name="bonusQTwo">Do you have your mask?</string>
+    <string name="bonusQThree">Is your first period fun?</string>
+    <string name="bonusTitle">Bonus Round</string>
+    <string name="bonusYesOne">Yes</string>
+    <string name="bonusNoOne">No</string>
 </resources>

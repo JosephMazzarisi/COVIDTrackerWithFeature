@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements android.view.View
 
 
     public void launchSecondActivity(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, ThirdActivity.class);
         if (((yesOne || noOne) == true) && ((yesTwo || noTwo) == true) && ((yesThree || noThree) == true) && ((yesFour || noFour) == true) && ((yesFive || noFive) == true)) {
             intent.putExtra(yesOneS, yesOne);
             intent.putExtra(yesTwoS, yesTwo);
